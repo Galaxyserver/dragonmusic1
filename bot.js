@@ -342,4 +342,8 @@ client.on('message', message => {
     }
 });
 
+client.on('ready', ready => {
+client.user.setGame(`1play|Dragon Shop`,`https://twitch.tv/ichbinxirdx`)
+});
+
 client.login(process.env.BOT_TOKEN);
